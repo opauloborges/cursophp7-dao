@@ -15,7 +15,7 @@ class Sql extends PDO{ // a classe é extendida da Classe nativa "PDO", ou seja 
 
 			foreach ($parameters as $key => $value) {
 
-				$statemant->setParam($key,$value);
+				$this->setParam($statemant,$key,$value);
 
 			}
 
