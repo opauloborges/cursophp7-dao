@@ -27,17 +27,21 @@ echo json_encode($usuarios);
 
 
 //Carrega usuario, usando login e senha
+//$usuario = new Usuario();
+//$usuario->login("mano","mano");
+//echo $usuario;
+
+//inser de um usuario novo
+//$aluno = new Usuario("CARAI","Cacete");
+//$aluno->insert();
+//echo $aluno;
+
+
 $usuario = new Usuario();
-$usuario->login("mano","mano");
+$usuario->loadById(8);
+$usuario->update("professor","minhabola123");
+
 echo $usuario;
-
-
-
-
-
-
-
-
 
 
 
