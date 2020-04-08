@@ -36,16 +36,21 @@ echo json_encode($usuarios);
 //$aluno->insert();
 //echo $aluno;
 
-
+//UPDATE de um usuario
+/*
 $usuario = new Usuario();
 $usuario->loadById(8);
 $usuario->update("professor","minhabola123");
 
 echo $usuario;
+*/
 
 
+$usuario = new Usuario();
+$usuario->loadById(9);
+$usuario->delete();
 
-
+echo $usuario;
 
 
 
