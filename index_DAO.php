@@ -45,7 +45,7 @@ $usuario->update("professor","minhabola123");
 echo $usuario;
 */
 
-
+//Deletando uma linha da tabela
 $usuario = new Usuario();
 $usuario->loadById(9);
 $usuario->delete();
